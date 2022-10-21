@@ -1,6 +1,6 @@
 const mongoose=require("mongoose");
 
-mongoose.connect("mongodb://localhost:27017/discordFeedbackForm",{
+mongoose.connect("mongodb+srv://priyobroto:<password>@cluster0.5fojxl0.mongodb.net/test",{
     useNewUrlParser : true,
     useUnifiedTopology : true
 }).then(()=>{
