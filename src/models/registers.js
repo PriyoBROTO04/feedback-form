@@ -1,7 +1,7 @@
 const mongoose= require("mongoose");
 
 const feedbackSchema=new mongoose.Schema({
-    name : {
+    mood : {
         type : String
     },
     standout : {

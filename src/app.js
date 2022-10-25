@@ -30,7 +30,9 @@ app.post("/register", async (req,res) =>{
         })
 
         const registered=await registerFeedback.save();
-        res.status(201).sendFile(process.cwd() + '/public/index.html');
+        res.status(201).sendFile(process.cwd() + '/public/register.html');
+
+
 
     } catch(error){
         res.status(400).send(error);
