@@ -8,21 +8,34 @@
     font-family: Arca Majora;
     src: url(../Resources/Fonts/ArcaMajora3-Bold.otf);
 }
+@font-face {
+    font-family: Atkinson-Hyperlegible;
+    font-weight: 600;
+    src: url(../Resources/Fonts/Atkinson-Hyperlegible-Bold-102.ttf);
+}
+
+@font-face {
+    font-family: Atkinson-Hyperlegible;
+    font-weight: 400;
+    src: url(../Resources/Fonts/Atkinson-Hyperlegible-Regular-102.ttf);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 body {
-    background: url("../Resources/Images/Bg.jpg") center center no-repeat;
+    background: url("../Resources/Images/bg1.jpg") center center no-repeat;
     background-size: cover;
     height: 100vh;
 }
 .container{
     width: 667px;
-    height: 230px;
-    color: black;
-    background-color:#F7F7F7;
+    height: 250px;
+    background-image: url("../Resources/Images/noise.svg");
+    background-color: rgba(168, 180, 165, 0.38);
+    backdrop-filter: blur(12.5px);
     border-radius: 20px;
     position: absolute;
     top: 60%;
@@ -32,9 +45,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: #f1f1dc8e solid 1px;
 }
 .text{
-    font-family: Arca Majora;
+    font-family: Atkinson-Hyperlegible;
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
     padding-bottom: 15px;
 }
 .image {
@@ -44,13 +61,14 @@ body {
 }
 .image img{
     position: absolute;
-    top: -100%;
+    top: -90%;
+    filter: hue-rotate(80deg);
 }
 .button{
-    width: 450px;
+    width: 100%;
     height: 47px;
     padding: 10px;
-    background-color: #6166DF;
+    background-color: rgba(94, 134, 84, 0.7);
     color: #F7F7F7;
     font-family: 'Montserrat', sans-serif; 
     font-size: 16px;
@@ -60,11 +78,33 @@ body {
     border-radius: 6px;
     transition: all 0.2s ease-in-out;
 }
+.container a{
+    width: 80%;
+}
 .button:hover{
-    background-color: #4a4ebf;
-    color: white;
+    /* background-color: #4a4ebf;
+    color: white; */
+    box-shadow: 0px 0px 17px 0px #D4D589;
 }
 .button:active{
-    background-color: #353bad;
+    background-color: rgba(39, 70, 31, 0.7);
     transition: none 0.2s ease-in-out;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    font-family: Arca Majora;
+    background-color: black;
+    font-size: 10px;
+    letter-spacing: 0.8px;
+    padding: 8px 0px;
+}
+mark{
+    background-color: transparent;
+    color: #b8f86a;
+}
+footer a{
+    text-decoration: none;
 }

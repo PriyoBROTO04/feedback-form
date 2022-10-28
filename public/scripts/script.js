@@ -70,11 +70,11 @@ refernxtbtn.addEventListener("click", () => {
         refer.classList.remove('cardactive');
         refer.classList.add('carddeactive');
         info.classList.add('cardactive');
-        refertab.classList.remove('tabactive');
-        infotab.classList.add('tabactive');
+        // refertab.classList.remove('tabactive');
+        // infotab.classList.add('tabactive');
         referinput.forEach(input => {
             if(input.value!=""){
-                input.classList.remove('error')
+                input.classList.remove('error');
             }
             
         })
@@ -117,6 +117,13 @@ function validateform() {
     })
     console.log(f);
     if(f==2){
+        infoinput.forEach(input => {
+            if(input.value==""){
+                input.classList.remove('error')
+            }
+            
+        })
+        
         
         return true;
     }
