@@ -62,6 +62,9 @@ body {
     transform: rotate(0deg); 
     animation: 1.11111s linear -0.833333s infinite normal forwards running spin-b0d809ab-229f-4d1a-8f96-a73ac6cf58fe;
 }
+.facts{
+    font-family:'Nunito', sans-serif;;
+}
 .container{
     width: 667px;
     height: 250px;

@@ -12,7 +12,7 @@
 
 </head>
 
-<body onload="myFunction()">
+<body>
     <div class="loader-wrapper">
         <img src="Resources/Images/loader.svg" alt="" srcset="">
         <div class="facts">
@@ -189,9 +189,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script type="text/javascript">
         const preloader=$('.loader-wrapper');
-        setTimeout(function myFunction(){
+        window.onload=setTimeout(function myFunction(){
             preloader.fadeOut();
-            },2000)
+            },3000)
+        
         
             var divtags=$("div.fact");
             if(divtags.length){
