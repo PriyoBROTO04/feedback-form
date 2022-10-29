@@ -9,6 +9,15 @@ html {
     width: 331px;
     height: 453px;
 }
+.loader-wrapper img{
+    width: 30%;
+}
+.facts{
+    width: 77%;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+}
 .container{
     width: 331px;
     height: 353px;

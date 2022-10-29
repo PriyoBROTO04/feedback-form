@@ -10,6 +10,17 @@
     <title>Thank You - Xavier's High</title>
 </head>
 <body>
+    <div class="loader-wrapper">
+        <img src="/public/Resources/Images/loader.svg" alt="" srcset="">
+        <div class="facts">
+            <div class="fact">"Xavier's High was originally a private server for 100 people."</div>
+            <div class="fact">"Since the first day on Xavier's High, we never invited Mee6."</div>
+            <div class="fact">"We had our first logo from made in Pixlr, an online editor."</div>
+            <div class="fact">"When we made our server public it had >100 public channels altogether!"</div>
+            <div class="fact">"Previously we used to update the server everyday , now we limited it to once per week..."</div>
+            <div class="fact">"The form uses <i>Atkinson Hyperlegible Font</i> from Braille Institute, proved to be the perfect font for accessibility."</div>
+        </div>
+    </div>
     <div class="container">
         <div class="image">
             <img src="Resources/Images/illustration.png" alt="" srcset="">
@@ -28,5 +39,22 @@
     <footer>
         Developed and maintained by <a href="https://priyobroto04.github.io/MySite/" target="_blank"><mark>danté</mark> </a>| Designed by <a href="https://messyhunk.carrd.co/" target="_blank"><mark>messyhunk</mark></a>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        const preloader=$('.loader-wrapper');
+        setTimeout(function myFunction(){
+            preloader.fadeOut();
+            },2000)
+        
+            var divtags=$("div.fact");
+            if(divtags.length){
+                var display=Math.floor(Math.random() * divtags.length);
+                for(var i=0;i<divtags.length;i++){
+                    if(i!==display){
+                        $(divtags[i]).hide();
+                    }
+                }
+            }
+    </script>
 </body>
 </html>
