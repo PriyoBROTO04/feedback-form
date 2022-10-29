@@ -58,7 +58,8 @@ body {
     
 }
 .loader-wrapper img{
-    width: 10%;
+    min-width: 150px;
+    max-width: 12%;
     transform: rotate(0deg); 
     animation: 1.11111s linear -0.833333s infinite normal forwards running spin-b0d809ab-229f-4d1a-8f96-a73ac6cf58fe;
 }
@@ -95,8 +96,8 @@ body {
 
 }
 .image img{
-    position: absolute;
-    top: -90%;
+    position: relative;
+    top: -257%;
     filter: hue-rotate(80deg);
 }
 .button{
