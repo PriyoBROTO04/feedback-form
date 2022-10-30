@@ -24,7 +24,7 @@
     padding: 0;
     box-sizing: border-box;
     color: white;
-    font-family: Atkinson-Hyperlegible;
+    font-family: Arca Majora;
     text-align: center;
 }
 body {
@@ -84,7 +84,6 @@ body {
     border: #f1f1dc8e solid 1px;
 }
 .text{
-    font-family: Atkinson-Hyperlegible;
     width: 100%;
     text-align: center;
     font-size: 17px;
