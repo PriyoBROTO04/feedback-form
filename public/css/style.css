@@ -71,7 +71,12 @@ body {
     animation: 2.22222s linear -0.833333s infinite normal forwards running spin;
 }
 .facts{
-    font-family: 'Nunito', sans-serif;;
+
+    width: 550px;
+    text-align: center;
+}
+.fact{
+    font-family: 'Nunito', sans-serif;
 }
 .transition {
     transition: all 0.8s ease-in-out;

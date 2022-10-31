@@ -29,6 +29,13 @@ enterbtn.addEventListener("click", () => {
 })
 gennxtbtn.addEventListener("click", () => {
     geninput.forEach(input => {
+        {
+            input.classList.remove('error');
+        }
+
+    })
+    setTimeout(()=>{
+        geninput.forEach(input => {
         if (input.value != "") {
             input.classList.remove('error');
             gen.classList.remove('cardactive');
@@ -41,6 +48,7 @@ gennxtbtn.addEventListener("click", () => {
             input.classList.add('error');
         }
     })
+})
 
 
 })
